@@ -24,8 +24,8 @@ a, a:hover, a:visited, a:active {
   text-decoration: none;
 }
 
-button a:visited {
-  color: #377DFF;
+a:active {
+  color: #FFFFFF;
 }
 
 .header {
@@ -118,10 +118,17 @@ ul {
   align-items: center;
   height: 48px;
 }
-.button:hover, .button:active {
-  background-color: #377DFF;
+.button a:hover, .button a:active {
   color: #FDFFFF;
   box-shadow: 0px 4px 8px rgba(55, 125, 255, 0.5);
+}
+.button a:visited {
+  color: #377DFF;
+}
+
+button:hover {
+  background-color: #377DFF;
+  color: #FDFFFF;
 }
 
 .Home {
@@ -842,7 +849,7 @@ ul {
     left: 48%;
   }
   .group-11 {
-    left: 68%;
+    left: 60%;
   }
 }
 @media screen and (max-width: 1170px) {
@@ -920,7 +927,7 @@ ul {
 }
 @media screen and (max-width: 576px) {
   .container {
-    max-width: 390px;
+    max-width: 350px;
   }
   .heading--footer {
     font-size: 18px;
@@ -1027,7 +1034,7 @@ ul {
     width: 40%;
   }
   .footer .footer-section {
-    row-gap: 45px;
+    margin: 0 0 20px;
   }
   .footer .footer-section p {
     size: 18px;
@@ -1036,6 +1043,9 @@ ul {
   .footer .footer-section .heading--footer {
     font-size: 18px;
     line-height: 22.5px;
+  }
+  .footer .footer-sections {
+    row-gap: 20px;
   }
 }
 .Page__Eror {
