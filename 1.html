@@ -4,48 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style/scss/style.css">
-    <script src = ./style/js/1.js > </script>
+    <link rel="stylesheet" href="./style/css/style.css">
+    <script src = ./js/1.js> </script>
     </head>
 <body>
     <header>
         <div class="header">
-        <div class="container">
-            <div class="flex">
-                <div class="logo"> 
-                    <img src="./style/img/Logo.png" class="logo__header" alt="Logo">
-                    <div class="logo__txt"> 
-                        <div class="logo__txt__Agency"> Agency </div>
-                        <div class="logo__txt__Creativ">Creative</div>
-                </div>
-                </div>
-                <nav class="navbar">
-                    <ul class="menu flex">
-                        <li><a href="#Home" class="menu__item">Home</a></li>
-                        <li><a href="#about-us" class="menu__item">About</a></li>
-                        <li><a href="#our-services" class="menu__item">Services</a></li>
-                        <li><a href="404.html" class="menu__item">Projects</a></li>
-                    </ul>
-
-                    <div class="burger">
-                        <img src="./style/img/align-center.png" alt="Menu">
+            <div class="container">
+                <div class="flex">
+                    <div class="logo"> 
+                        <img src="./img/Logo.png" class="logo__header" alt="Logo">
+                        <div class="logo__txt"> 
+                            <div class="logo__txt__Agency"> Agency </div>
+                            <div class="logo__txt__Creativ">Creative</div>
+                        </div>
                     </div>
-                </nav>
-                <button class="button button--logo"> <a href="#Contact">Contact us</a></button>
-            </div>
+                    <nav class="navbar">
+                        <ul class="menu flex" id="navbar-menu">
+                            <li><a href="#Home" class="menu__item">Home</a></li>
+                            <li><a href="#about-us" class="menu__item">About</a></li>
+                            <li><a href="#our-services" class="menu__item">Services</a></li>
+                            <li><a href="404.html" class="menu__item">Projects</a></li>
+                        </ul>
+                        <div class="burger" id="navbar-hamb-field">
+                            <img src="./img/align-center.png" alt="Menu">
+                        </div>
+                        <div class="popup" id="popup"></div>
+                    </nav>
+                    <button class="button button--logo"><a href="#Contact">Contact us</a></button>
+                </div>
             </div>
         </div>
     </header>
+    
     <main>
         <section class="Home" id="Home">
             <div class="container">
                 <div class="decor">
-                    <div class="circl-1 circl"><img src="./style/img/Ellipse blue.png"></div>
-                    <div class="circl-2 circl"><img src="./style/img/Ellipse red.png"></div>
-                    <div class="circl-3 circl"><img src="./style/img/Ellipse blue.png"></div>
-                    <div class="circl group-1"><img src="./style/img/Group blue.png"></div>
-                    <div class="circl group-2"><img src="./style/img/Group red.png"></div>
-                    <div class="circl group-3"><img src="./style/img/Group grenn.png"></div>
+                    <div class="circl-1 circl"><img src="./img/Ellipse blue.png"></div>
+                    <div class="circl-2 circl"><img src="./img/Ellipse red.png"></div>
+                    <div class="circl-3 circl"><img src="./img/Ellipse blue.png"></div>
+                    <div class="circl group-1"><img src="./img/Group blue.png"></div>
+                    <div class="circl group-2"><img src="./img/Group red.png"></div>
+                    <div class="circl group-3"><img src="./img/Group grenn.png"></div>
                 </div>
                 <div class="tekst">
                     <h1 class="heading heading--biggest heading--Home"> Make your dream<br> business goal come true</h1>
@@ -56,7 +57,7 @@
                         <div class="pictur pictur_Done">
                             <div class="star">
                                 <div class="star star-1">
-                                    <img src="./style/img/star.png">
+                                    <img src="./img/star.png">
                                     <p>Great Project</p>
                                     </div>
                                     <p class="star star-2"> <b>800+</b> Done</p>
@@ -66,7 +67,7 @@
                             <div class="card-content"> 
                                 <div class="profile flex">
                                     <div class="profile-pic flex"> 
-                                        <img src="./style/img/Bill Adams.png" alt="Bill Adams">  
+                                        <img src="./img/Bill Adams.png" alt="Bill Adams">  
                                 </div> 
                                 <div class="profile-info"> 
                                     <h3>Bill Adams</h3> 
@@ -78,7 +79,7 @@
                             </div> 
                         </div> 
                     </div>
-                    <div class="picture picture--img"> <img src="./style/img/photo 1.png" alt="Фото команды"></div>
+                    <div class="picture picture--img"> <img src="./img/photo 1.png" alt="Фото команды"></div>
                 </div>
             </div>
         </section>
@@ -87,19 +88,19 @@
                 <h3 class="heading heading--min">About Us</h3>
                 <h2 class="heading heading--max heading--about-us">Our Teammate</h2>
                 <div class="flex about-us__content">
-                    <div class="about-us__img"> <img src="./style/img/photo 2.png" alt="Our Teammate"></div>
+                    <div class="about-us__img"> <img src="./img/photo 2.png" alt="Our Teammate"></div>
                     <div class="about-us__txt">
                         <p class="txt">We move with make a Creative Strategy for help your business goal, we help to improve your income by a services we have. make your content look interesting and make people look for your business</p>
                         <p class="txt">We move with make a Creative Strategy for help your business goal, we help to improve your income by a services we have. make your content look interesting and make people look for your business </p>
                             <div class="button-container flex">
                                 <button class="about button button_aboutus"> <a href="./404.html">About Us</a> </button>
-                                <button class="about button button_play"> <img src="./style/img/play-circle.png" alt="play-circle" class="play-circle"> <a href="404.html">Our Story</a></button>
+                                <button class="about button button_play"> <img src="./img/play-circle.png" alt="play-circle" class="play-circle"> <a href="404.html">Our Story</a></button>
                             </div>
                     </div>
                 </div>
                 <div class="decor">
-                    <div class="circl group-4"><img src="./style/img/Group orange.png"></div>
-                    <div class="circl group-5"><img src="./style/img/Group pink.png"></div>
+                    <div class="circl group-4"><img src="./img/Group orange.png"></div>
+                    <div class="circl group-5"><img src="./img/Group pink.png"></div>
                 </div>
             </div>
         </section>
@@ -110,20 +111,20 @@
                         <h3 class="heading heading--min heading--min--servise">Our Services</h3>
                         <h2 class="heading heading--max heading--max--servise">Perfect and Fast Movement</h2>
                         <p class="servise__description"> We move with make a Creative Strategy for help your business goal, we help to improve your income by a services we have. make your content look interesting and make people look for your business</p>
-                        <h4 class="heading heading--read-more">Read more<img src="./style/img/arrow-right 1.png" class="arrow-right" alt="arrow-right"></h4>
+                        <h4 class="heading heading--read-more">Read more<img src="./img/arrow-right 1.png" class="arrow-right" alt="arrow-right"></h4>
                     </div>
                     <div class="items flex">
                         <div class="item it-1">
-                            <img src="./style/img/monitor.png" alt="">
+                            <img src="./img/monitor.png" alt="Social Media">
                             <h3 class="heading heading_min heading-item">Social Media <br> Management</h3></div>
                         <div class="item it-2">
-                            <img src="./style/img/settings.png" alt="">
+                            <img src="./img/settings.png" alt="Search Engine">
                             <h3 class="heading heading_min heading-item"> Search Engine <br> Optimization</h3></div>
                         <div class="item it-3">
-                            <img src="./style/img/pen.png" alt="">
+                            <img src="./img/pen.png" alt="Design">
                             <h3 class="heading heading_min heading-item">Design</h3></div>
                         <div class="item it-4">
-                            <img src="./style/img/tv.png" alt="">
+                            <img src="./img/tv.png" alt="Ads">
                             <h3 class="heading heading_min heading-item">Ads</h3></div>
                     </div>
                 </div>
@@ -133,25 +134,25 @@
             <div class="container container--Portfolio">
                 <h3 class="heading heading--min">Our Portfolio</h3>
                 <h2 class="heading heading--max heading--Portfolio">What do we do</h2>
-                <p class="portf__txt">all projects that we have already done , proven can help to use more <br>comfortable, then can used by client from our business</p>
+                <p class="Portfolio__text">all projects that we have already done , proven can help to use more <br>comfortable, then can used by client from our business</p>
                     <div class="medias flex">
                         <div class="media media-1"> 
-                            <img  src="./style/img/photo 3.png" alt=""> 
+                            <img  src="./img/photo 3.png" alt="Design Byte App"> 
                             <div>Design Byte App</div>
                         </div>
                         <div class="media media-2">
-                            <img  src="./style/img/photo 4.png" alt="">
+                            <img  src="./img/photo 4.png" alt="Cloud App">
                             <div>Cloud App</div>
                         </div>
                         <div class="media media-3">
-                            <img  src="./style/img/photo 5.png" alt="">
+                            <img  src="./img/photo 5.png" alt="Design Furniture App">
                             <div>Design Furniture App</div>
                         </div>
                     </div>
                 <button class="button"> <a href="404.html">See All Portfolio</a></button>
                 <div class="decor">
-                    <div class="circl group-6"><img src="./style/img/Group pink.png"></div>
-                    <div class="circl group-7"><img src="./style/img/Group pink.png"></div>
+                    <div class="circl group-6"><img src="./img/Group pink.png"></div>
+                    <div class="circl group-7"><img src="./img/Group pink.png"></div>
                 </div>
             </div>
         </section>
@@ -164,7 +165,7 @@
                         <div class="card-coment"> 
                             <div class="prof flex">
                                 <div class="avatar-pic flex"> 
-                                    <img src="./style/img/avatar.png" alt="Angel Rose">  
+                                    <img src="./img/avatar.png" alt="Angel Rose">  
                                 </div> 
                             <div class="test-info"> 
                                 <h3 class="heading heading--name">Angel Rose</h3>
@@ -180,7 +181,7 @@
                         <div class="card-coment"> 
                             <div class="prof flex">
                                 <div class="avatar-pic flex"> 
-                                    <img src="./style/img/avatar.png" alt="Angel Rose">  
+                                    <img src="./img/avatar.png" alt="Angel Rose">  
                                 </div> 
                             <div class="test-info"> 
                                 <h3 class="heading heading--name">Angel Rose</h3>
@@ -196,7 +197,7 @@
                         <div class="card-coment"> 
                             <div class="prof flex">
                                 <div class="avatar-pic flex"> 
-                                    <img src="./style/img/avatar.png" alt="Angel Rose">  
+                                    <img src="./img/avatar.png" alt="Angel Rose">  
                                 </div> 
                             <div class="test-info"> 
                                 <h3 class="heading heading--name">Angel Rose</h3>
@@ -208,11 +209,12 @@
                             </div> 
                         </div> 
                     </div>
+
                     </div>
-                </div>
+                    </div>
                 <div class="decor">
-                    <div class="circl group-8"><img src="./style/img/Group blue.png"></div>
-                    <div class="circl group-9"><img src="./style/img/Group blue.png"></div>
+                    <div class="circl group-8"><img src="./img/Group blue.png"></div>
+                    <div class="circl group-9"><img src="./img/Group blue.png"></div>
                 </div>
             </div>
         </section>
@@ -225,13 +227,13 @@
                         <button class="button button--collab"> <a href="404.html"> Get Started </a></button>
                     </div>
                     <div class="collab-images">
-                        <img class="images-1" src="./style/img/photo 7.png" alt="Collaboration">
-                        <img class="images-2" src="./style/img/photo 6.png" alt="Collaboration">
+                        <img class="images-1" src="./img/photo 7.png" alt="Collaboration">
+                        <img class="images-2" src="./img/photo 6.png" alt="Collaboration">
                     </div>
                 </div>
                     <div class="decor">
-                        <div class="circl group-10"><img src="./style/img/Group blue bold.png"></div>
-                        <div class="circl group-11"><img src="./style/img/Group orange 2.png"></div>
+                        <div class="circl group-10"><img src="./img/Group blue bold.png"></div>
+                        <div class="circl group-11"><img src="./img/Group orange 2.png"></div>
                     </div>
                 </div>
             </div>
@@ -241,7 +243,7 @@
             <div class="container container--footer">
                 <div class="footer-content flex">
                     <div class="logo logo--footer"> 
-                        <img src="./style/img/Logo.png" class="footer__img" alt="Logo">
+                        <img src="./img/Logo.png" class="footer__img" alt="Logo">
                         <div class="logo__txt"> 
                             <div class="logo__txt__footer">Agency</div>
                             <div class="logo__txt__Creativ">Creative</div>
@@ -280,11 +282,11 @@
                     </div>
                 </div>
                 <div class="social-media flex">
-                    <img src="./style/img/facebook.png" alt="Facebook">
-                    <img src="./style/img/instagram.png" alt="Instagram">
-                    <img src="./style/img/linkedin.png" alt="LinkedIn">
-                    <img src="./style/img/email.png" alt="Email">
-                    <img src="./style/img/twitter.png" alt="Twitter">
+                    <img src="./img/facebook.png" alt="Facebook">
+                    <img src="./img/instagram.png" alt="Instagram">
+                    <img src="./img/linkedin.png" alt="LinkedIn">
+                    <img src="./img/email.png" alt="Email">
+                    <img src="./img/twitter.png" alt="Twitter">
                 </div>
                 <hr>
                 <div class="footer-bottom">
