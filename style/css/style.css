@@ -24,10 +24,6 @@ a, a:hover, a:visited, a:active {
   text-decoration: none;
 }
 
-a:active {
-  color: #FFFFFF;
-}
-
 .header {
   padding: 72px 0 68.12px;
   background-color: #FDFFFF;
@@ -97,8 +93,7 @@ ul {
   text-decoration: none;
   color: black;
 }
-
-.menu__item:hover, .menu__item:active {
+.menu__item:hover, .menu__item:focus .menu__item:active {
   font-weight: bold;
 }
 
@@ -115,17 +110,12 @@ ul {
   padding: 11px 50px;
   justify-content: center;
   align-items: center;
-  height: 48px;
-}
-.button a:visited {
-  color: #377DFF;
+  max-height: 48px;
 }
 
 button:hover, button:active {
   background-color: #377DFF;
   box-shadow: 0px 4px 8px rgba(55, 125, 255, 0.5);
-}
-button:hover a:hover, button:active a:hover {
   color: #FDFFFF;
 }
 
@@ -172,15 +162,19 @@ button:hover a:hover, button:active a:hover {
   padding: 0 64px 0 59px;
   opacity: 0.6;
   color: gray;
+  font-family: "Nunito";
+}
+
+.picture {
+  position: relative;
 }
 
 .pictur_Done {
   background-color: #ffffff;
   position: absolute;
-  width: 175px;
-  height: 95px;
-  top: 461px;
-  left: 243px;
+  z-index: 2;
+  top: 23px;
+  left: 144px;
   border-radius: 16px;
   box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.15);
 }
@@ -205,7 +199,6 @@ button:hover a:hover, button:active a:hover {
   font-size: 12px;
   font-weight: bold;
   color: #1D1D1D;
-  opacity: 50%;
   align-items: center;
   line-height: 15px;
   text-align: center;
@@ -214,13 +207,14 @@ button:hover a:hover, button:active a:hover {
 .star-1 p {
   padding: 4px 5px 0 3px;
   margin: 0;
+  opacity: 0.5;
 }
 
 .star-2 {
   margin: 0;
   font-size: 24px;
   text-align: center;
-  padding: 0 21px 9px 11px;
+  padding: 0 31px 16px 20px;
   line-height: 32.74px;
 }
 .star-2 b {
@@ -228,15 +222,15 @@ button:hover a:hover, button:active a:hover {
 }
 
 .testimonial-card {
-  width: 166px;
-  height: 166px;
+  max-width: 166px;
   border-radius: 16px;
   background-color: #fff;
   box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
   position: absolute;
   text-align: start;
-  margin: 342px 0 0 930px;
-  letter-spacing: normal;
+  top: 342px;
+  left: 930px;
+  z-index: 2;
 }
 
 .card-content {
@@ -255,17 +249,16 @@ button:hover a:hover, button:active a:hover {
 
 .profile-info {
   padding: 4px 0 0;
+  font-weight: 600;
 }
-
 .profile-info h3 {
   font-size: 10px;
   color: #1D1D1D;
   margin: 0 0 2px;
   line-height: 12.5px;
-  letter-spacing: -0.25px;
   font-weight: 600;
+  letter-spacing: 0.1px;
 }
-
 .profile-info p {
   font-size: 6px;
   color: #1D1D1D;
@@ -273,7 +266,7 @@ button:hover a:hover, button:active a:hover {
   margin: 0;
   line-height: 7.5px;
   letter-spacing: 0.01px;
-  font-weight: 600;
+  letter-spacing: 0.01px;
 }
 
 .testimonial-quote {
@@ -281,7 +274,7 @@ button:hover a:hover, button:active a:hover {
   color: #1D1D1D;
   font-weight: 400;
   line-height: 13.64px;
-  height: 70px;
+  letter-spacing: 0.01px;
 }
 
 .about-us {
@@ -395,7 +388,7 @@ button:hover a:hover, button:active a:hover {
   align-items: center;
   justify-content: center;
   text-align: center;
-  /* border: 1px solid rgba(0, 0, 0, 0.1); */
+  border: 0.5px solid rgba(0, 0, 0, 0.1);
 }
 .item img {
   margin: 0 0 32px 0;
@@ -496,10 +489,6 @@ button:hover a:hover, button:active a:hover {
 .cards {
   gap: 50px;
   max-width: 1240px;
-  /*
-  overflow: hidden;
-  transition: transform 0.5s ease;
-  */
 }
 
 .test-card {
@@ -676,7 +665,7 @@ button:hover a:hover, button:active a:hover {
   line-height: 23px;
 }
 .footer .social-media {
-  margin: 0 0 16.99px 0;
+  margin: 0 0 11.66px 0;
   text-align: center;
   padding: 0 431px 0 443px;
   justify-content: space-between;
@@ -704,8 +693,8 @@ button:hover a:hover, button:active a:hover {
   z-index: -1;
 }
 .circl-1 {
-  transform: translateX(74px);
-  transform: translateY(223px);
+  left: 74px;
+  top: 225px;
 }
 .circl-2 {
   top: 601px;
@@ -770,10 +759,11 @@ button:hover a:hover, button:active a:hover {
     max-width: 1100px;
   }
   .pictur_Done {
-    display: none;
+    top: 5%;
+    left: 7%;
   }
   .testimonial-card {
-    display: none;
+    left: 78%;
   }
   .collab-images {
     gap: 0px;
@@ -859,6 +849,14 @@ button:hover a:hover, button:active a:hover {
   .container {
     max-width: 900px;
   }
+  .pictur_Done {
+    top: 5%;
+    left: 0%;
+  }
+  .testimonial-card {
+    top: 68%;
+    left: 83%;
+  }
   .about-us__content {
     flex-direction: column;
   }
@@ -887,8 +885,11 @@ button:hover a:hover, button:active a:hover {
   .footer .social-media {
     padding: 0 300px;
   }
+  .about-us__content {
+    align-items: center;
+  }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
   .container {
     max-width: 768px;
   }
@@ -900,15 +901,17 @@ button:hover a:hover, button:active a:hover {
     flex-wrap: wrap;
   }
   .picture--img img {
-    width: 100%;
-    height: 100%;
-    align-items: center;
+    width: 90%;
+    height: 90%;
   }
   .footer .social-media {
     padding: 0 150px;
   }
+  .testimonial-card {
+    left: 79%;
+  }
 }
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 800px) {
   .container {
     max-width: 576px;
   }
@@ -924,7 +927,6 @@ button:hover a:hover, button:active a:hover {
   .burger {
     display: block;
     z-index: 5;
-    cursor: pointer;
   }
   .popup__menu {
     display: flex;
@@ -933,7 +935,7 @@ button:hover a:hover, button:active a:hover {
     display: none;
   }
   .button {
-    padding: 12px 40px;
+    padding: 12px 35px;
   }
   .button-container {
     justify-content: space-around;
@@ -941,10 +943,139 @@ button:hover a:hover, button:active a:hover {
   .footer .social-media {
     padding: 0 50px;
   }
+  .pictur_Done {
+    border-radius: 9px;
+  }
+  .pictur_img img {
+    border-radius: 12px;
+  }
+  .star img {
+    height: 15px;
+    width: 15px;
+  }
+  .star-1 {
+    padding: 8px 0 4px 13px;
+    font-size: 6px;
+    font-weight: 700;
+    line-height: 7.5px;
+  }
+  .star-1 p {
+    padding: 6px 0px 2 3px;
+  }
+  .star-2 {
+    font-size: 16px;
+    padding: 0 21px 9px 11px;
+    line-height: 16.37px;
+  }
+  .star-2 b {
+    letter-spacing: 0.05px;
+  }
+  .testimonial-card {
+    border-radius: 8px;
+    max-width: 120px;
+    top: 78%;
+  }
+  .card-content {
+    padding: 15px 11px 13px 12px;
+  }
+  .profile {
+    margin: 0 0 6.5px;
+  }
+  .profile-pic img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
+  .profile-info {
+    padding: 3px 0 0;
+  }
+  .profile-info h3 {
+    font-size: 8px;
+    color: #1D1D1D;
+    margin: 0 0 0.96px;
+    line-height: 8px;
+  }
+  .profile-info p {
+    font-size: 4px;
+    margin: 0;
+    line-height: 5px;
+  }
+  .testimonial-quote {
+    font-size: 7px;
+    line-height: 8px;
+  }
 }
 @media screen and (max-width: 576px) {
   .container {
-    max-width: 350px;
+    max-width: 320px;
+  }
+  .container--Portfolio, .container--Testimonial {
+    padding: 0 25px;
+  }
+  .picture img {
+    width: 330px;
+    height: 224px;
+  }
+  .pictur_Done {
+    border-radius: 6px;
+  }
+  .pictur_img img {
+    border-radius: 12px;
+  }
+  .star img {
+    height: 16px;
+    width: 16px;
+  }
+  .star-1 {
+    text-transform: uppercase;
+    padding: 8px 0 4px 13px;
+    font-size: 6px;
+    font-weight: 700;
+    line-height: 7.5px;
+  }
+  .star-1 p {
+    padding: 6px 0px 2 3px;
+  }
+  .star-2 {
+    font-size: 12px;
+    padding: 0 21px 9px 11px;
+    line-height: 16.37px;
+  }
+  .star-2 b {
+    letter-spacing: 0.05px;
+  }
+  .testimonial-card {
+    border-radius: 6px;
+    max-width: 80px;
+  }
+  .card-content {
+    padding: 13.1px 9.64px 10.78px 10.12px;
+  }
+  .profile {
+    margin: 0 0 5.78px;
+  }
+  .profile-pic img {
+    width: 15.42px;
+    height: 15.42px;
+    margin-right: 4.82px;
+  }
+  .profile-info {
+    padding: 1.93px 0 0;
+  }
+  .profile-info h3 {
+    font-size: 5px;
+    color: #1D1D1D;
+    margin: 0 0 0.96px;
+    line-height: 6.25px;
+  }
+  .profile-info p {
+    font-size: 3px;
+    margin: 0;
+    line-height: 3.75px;
+  }
+  .testimonial-quote {
+    font-size: 5px;
+    line-height: 6.82px;
   }
   .heading--footer {
     font-size: 18px;
@@ -953,9 +1084,6 @@ button:hover a:hover, button:active a:hover {
   .footer-section li {
     font-size: 16px;
     line-height: 20px;
-  }
-  .card-1, .card-2 {
-    display: none;
   }
   .collab-images {
     align-items: center;
@@ -978,7 +1106,7 @@ button:hover a:hover, button:active a:hover {
     width: 390px;
   }
   .footer hr {
-    width: 390px;
+    width: 350px;
   }
   .about-us__img img {
     width: 95%;
@@ -1053,14 +1181,20 @@ button:hover a:hover, button:active a:hover {
     font-size: 14px;
     line-height: 24px;
   }
+  .collab-images {
+    width: 360px;
+    height: 250px;
+  }
   .collab-images .images-1 {
-    padding: 85px 0 0 91px;
+    width: 221px;
+    height: 196px;
+    bottom: 0%;
   }
   .collab-images .images-2 {
-    padding: 0 0 230px;
-  }
-  .collab-images .images-1, .collab-images .images-2 {
-    width: 40%;
+    width: 180px;
+    height: 177px;
+    left: 50%;
+    bottom: 60%;
   }
   .collab {
     justify-content: center;
@@ -1078,6 +1212,69 @@ button:hover a:hover, button:active a:hover {
   }
   .footer .footer-sections {
     row-gap: 20px;
+  }
+  .footer .social-media img {
+    width: 36px;
+    height: 36px;
+  }
+  .decor .group-6 {
+    left: 70%;
+  }
+  .decor .group-9 {
+    left: 65%;
+  }
+  .circl-1 img, .circl-2 img, .circl-3 img {
+    width: 16px;
+    height: 16px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .container {
+    max-width: 310px;
+  }
+  .logo__header {
+    width: 32px;
+    height: 29.99px;
+  }
+  .logo__txt__Agency {
+    font-size: 14px;
+    line-height: 17.5px;
+  }
+  .logo__txt__Creativ {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .about-us__img {
+    width: 300px;
+    height: 204px;
+  }
+  .button {
+    padding: 5px 15px;
+  }
+  .collab-images .images-2 {
+    width: 160px;
+    height: 157px;
+  }
+  .collab-images .images-1 {
+    width: 201px;
+    height: 176px;
+  }
+  .collab-images {
+    width: 300px;
+    height: 200px;
+  }
+  .footer hr {
+    width: 300px;
+  }
+  .decor .group-6 {
+    left: 60%;
+  }
+  .picture--img img {
+    width: 300px;
+    height: 184px;
+  }
+  .footer .footer-bottom {
+    font-size: 15px;
   }
 }
 .error {
@@ -1104,7 +1301,6 @@ button:hover a:hover, button:active a:hover {
   z-index: 10;
   display: block;
   transition: 0.3s;
-  overflow-y: auto;
 }
 
 .popup.open {
@@ -1136,9 +1332,10 @@ button:hover a:hover, button:active a:hover {
   font-size: 20px;
   font-weight: bold;
   color: #FDFFFF;
-  transition: color 0.3s;
+  transition: #377DFF 0.3s;
 }
 
-.popup__menu li a:hover {
+.popup__menu li a:active {
   color: #377DFF;
+  background-color: #FDFFFF;
 }/*# sourceMappingURL=style.css.map */
