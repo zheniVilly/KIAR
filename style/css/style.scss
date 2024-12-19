@@ -8,6 +8,7 @@ $container-width: 1240px;
 $base-font-size: 20px;
 $base-letter-spacing: -0.25px;
 $base-line-height: 24px;
+$opacity: 0.5;
 
 @font-face 
 {
@@ -39,10 +40,6 @@ body
 a, a:hover, a:visited, a:active 
 {
     text-decoration: none;
-}
-
-a:active{
-    color: #FFFFFF;
 }
 
 .header 
@@ -121,10 +118,8 @@ ul {
 .menu__item {
     text-decoration: none;
     color: black;
-}
-
-.menu__item {
-    &:hover,
+    &:hover, 
+    &:focus
     &:active {
         font-weight:bold;
     }
@@ -144,18 +139,12 @@ ul {
     padding: 11px 50px;
     justify-content: center;
     align-items: center;
-    height: 48px;
-    a:visited {
-        color: $blue
-    }
-    
+    max-height: 48px;
 }
 button:hover, button:active {
     background-color: $blue;
     box-shadow: 0px 4px 8px rgba(55, 125, 255, 0.5);
-    a:hover {
-            color: $color-background;
-    }
+    color: $color-background;
 }
 
 
@@ -201,17 +190,21 @@ button:hover, button:active {
     padding: 0 64px 0 59px;
     opacity: 0.6;
     color: gray;
+    font-family: $nunito;
     }
 }
 
+.picture
+{
+    position: relative;
+}
 
 .pictur_Done {
     background-color: #ffffff;
     position: absolute;
-    width: 175px;
-    height: 95px;
-    top: 461px;
-    left: 243px;
+    z-index: 2;
+    top: 23px;
+    left: 144px;
     border-radius: 16px;
     box-shadow: 0 8px 24px 0 rgb(0, 0, 0, 0.15);
 }
@@ -240,7 +233,6 @@ button:hover, button:active {
     font-size: 12px;
     font-weight: bold;
     color: $color-text;
-    opacity: 50%;
     align-items: center;
     line-height: 15px;
     text-align: center;
@@ -250,6 +242,7 @@ button:hover, button:active {
     p {
     padding: 4px 5px 0 3px;
     margin: 0;
+    opacity: $opacity;
     }
 
 }
@@ -258,7 +251,7 @@ button:hover, button:active {
     margin: 0;
     font-size: 24px;
     text-align: center;
-    padding: 0 21px 9px 11px;
+    padding: 0 31px 16px 20px;
     line-height: 32.74px;
     b {
         letter-spacing: 0.05px;
@@ -266,15 +259,15 @@ button:hover, button:active {
 }
 
 .testimonial-card {
-    width: 166px;
-    height: 166px;
+    max-width: 166px;
     border-radius: 16px;
     background-color: #fff;
     box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
     position: absolute;
     text-align: start;
-    margin: 342px 0 0 930px;
-    letter-spacing: normal;
+    top:342px;
+    left: 930px;
+    z-index: 2; 
 }
 
 .card-content {
@@ -295,37 +288,33 @@ button:hover, button:active {
 
 .profile-info {
     padding: 4px 0 0;
-}
-
-.profile-info {
+    font-weight: 600;
     h3 {
     font-size: 10px;
     color: $color-text;
     margin: 0 0 2px;
     line-height: 12.5px;
-    letter-spacing: $base-letter-spacing;
     font-weight: 600;
+    letter-spacing: 0.1px;
     }
+    p {
+        font-size: 6px;
+        color: $color-text;
+        opacity: $opacity;
+        margin: 0;
+        line-height: 7.5px;
+        letter-spacing: 0.01px;
+        letter-spacing: 0.01px;
+        }
 }
 
-.profile-info { 
-    p {
-    font-size: 6px;
-    color: $color-text;
-    opacity: 0.5;
-    margin: 0;
-    line-height: 7.5px;
-    letter-spacing: 0.01px;
-    font-weight: 600;
-    }
-}
 
 .testimonial-quote {
     font-size: 10px;
     color: $color-text;
     font-weight: 400;
     line-height: 13.64px;
-    height: 70px;
+    letter-spacing: 0.01px;
 }
 
 .about-us {
@@ -442,7 +431,7 @@ button:hover, button:active {
     align-items: center;
     justify-content: center;
     text-align: center;
-    /* border: 1px solid rgba(0, 0, 0, 0.1); */
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
     img {
     margin: 0 0 32px 0;
     }
@@ -553,10 +542,6 @@ button:hover, button:active {
 .cards {
     gap: 50px;
     max-width: 1240px;
-    /*
-    overflow: hidden;
-    transition: transform 0.5s ease;
-    */
 }
 
 .test-card {
@@ -595,7 +580,7 @@ button:hover, button:active {
     p {
     font-size: 11px;
     color: $color-text;
-    opacity: 0.5;
+    opacity: $opacity;
     margin: 0;
     line-height: 15px;
     }
@@ -608,7 +593,7 @@ button:hover, button:active {
 .test-words {
     font-size: 18px;
     color: $color-text;
-    opacity: 0.5;
+    opacity: $opacity;
     padding: 0 31px 106.75px 40px;
     margin: 0;
     line-height: 28px;
@@ -757,7 +742,7 @@ button:hover, button:active {
     }
 
     .social-media {
-        margin: 0 0 16.99px 0;
+        margin: 0 0 11.66px 0;
         text-align: center;
         padding: 0 431px 0 443px;
         justify-content: space-between;
@@ -790,8 +775,8 @@ button:hover, button:active {
     z-index: -1;
 
     &-1 {
-        transform: translateX(74px);
-        transform: translateY(223px);
+        left: 74px;
+        top: 225px;
     }
 
     &-2 {
@@ -872,10 +857,12 @@ button:hover, button:active {
     }
 
     .pictur_Done {
-        display: none;
+        top: 5%;
+        left: 7%;
+        
     }
     .testimonial-card {
-        display: none;
+        left: 78%;
     }
     .collab-images {
         gap: 0px;
@@ -968,6 +955,14 @@ button:hover, button:active {
     .container {
         max-width: 900px;
     }
+    .pictur_Done {
+        top: 5%;
+        left: 0%;
+    }
+    .testimonial-card {
+        top: 68%;
+        left: 83%;
+    }
     .about-us__content {
         flex-direction: column;
     }
@@ -999,10 +994,14 @@ button:hover, button:active {
         padding: 0 300px;
         }
     }
+    .about-us__content
+    {
+        align-items: center;
+    }
 
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
     .container {
         max-width: 768px;
     }
@@ -1014,18 +1013,22 @@ button:hover, button:active {
         flex-wrap: wrap;
     }
     .picture--img img {
-        width: 100%;
-        height: 100%;
-        align-items: center;
+        width: 90%;
+        height: 90%;
+
     }
     .footer {
         .social-media {
         padding: 0 150px;
         }
     }
+    .testimonial-card {
+        left: 79%;
+    }
+    
 }
 
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 800px) {
     .container {
         max-width: 576px;
     }
@@ -1043,8 +1046,6 @@ button:hover, button:active {
     .burger {
         display: block;
         z-index: 5;
-        cursor: pointer;
-
     }
     .popup__menu
     {
@@ -1054,7 +1055,7 @@ button:hover, button:active {
         display: none;
     }
     .button {
-        padding: 12px 40px;
+        padding: 12px 35px;
     }
     .button-container {
         justify-content: space-around;
@@ -1064,12 +1065,197 @@ button:hover, button:active {
         padding: 0 50px;
         }
     }
+    
+    .pictur_Done {
+        border-radius: 9px;
+    }
+    
+    .pictur_img {
+        img {
+        border-radius: 12px;
+        }
+    }
+    
+    .star {
+        img {
+        height: 15px;
+        width: 15px;
+        }
+    }
+    
+    .star-1 {
+        padding: 8px 0 4px 13px;
+        font-size: 6px;
+        font-weight: 700;
+        line-height: 7.5px;
+    }
+    
+    .star-1 {
+        p {
+        padding: 6px 0px 2 3px;
+        }
+    
+    }
+    
+    .star-2 {
+        font-size: 16px;
+        padding: 0 21px 9px 11px;
+        line-height: 16.37px;
+        b {
+            letter-spacing: 0.05px;
+        }
+    }
+    
+    .testimonial-card {
+
+        border-radius: 8px;
+        max-width: 120px;
+        top: 78%;
+    }
+    
+    .card-content {
+        padding: 15px 11px 13px 12px;
+    }
+    
+    .profile {
+        margin: 0 0 6.5px;
+    }
+    
+    .profile-pic {
+         img {
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+         }
+    }
+    
+    .profile-info {
+        padding: 3px 0 0;
+    }
+    
+    .profile-info {
+        h3 {
+        font-size: 8px;
+        color: $color-text;
+        margin: 0 0 0.96px;
+        line-height: 8px;
+        }
+    }
+    
+    .profile-info { 
+        p {
+        font-size: 4px;
+        margin: 0;
+        line-height: 5px;
+        }
+    }
+    
+    .testimonial-quote {
+        font-size: 7px;
+        line-height: 8px;
+    }
 }
 
 @media screen and (max-width: 576px) {
     .container {
-        max-width: 350px;
+        max-width: 320px;
     }
+    .container--Portfolio, .container--Testimonial {
+        padding: 0 25px;
+    }
+    .picture img {
+        width: 330px;
+        height: 224px;
+    }
+    .pictur_Done {
+        border-radius: 6px;
+    }
+    
+    .pictur_img {
+        img {
+        border-radius: 12px;
+        }
+    }
+    
+    .star {
+        img {
+        height: 16px;
+        width: 16px;
+        }
+    }
+    
+    .star-1 {
+        text-transform: uppercase;
+        padding: 8px 0 4px 13px;
+        font-size: 6px;
+        font-weight: 700;
+        line-height: 7.5px;
+    }
+    
+    .star-1 {
+        p {
+        padding: 6px 0px 2 3px;
+        }
+    
+    }
+    
+    .star-2 {
+        font-size: 12px;
+        padding: 0 21px 9px 11px;
+        line-height: 16.37px;
+        b {
+            letter-spacing: 0.05px;
+        }
+    }
+    
+    .testimonial-card {
+
+        border-radius: 6px;
+        max-width: 80px;
+    }
+    
+    .card-content {
+        padding: 13.1px 9.64px 10.78px 10.12px;
+    }
+    
+    .profile {
+        margin: 0 0 5.78px;
+    }
+    
+    .profile-pic {
+         img {
+        width: 15.42px;
+        height: 15.42px;
+        margin-right: 4.82px;
+         }
+    }
+    
+    .profile-info {
+        padding: 1.93px 0 0;
+    }
+    
+    .profile-info {
+        h3 {
+        font-size: 5px;
+        color: $color-text;
+        margin: 0 0 0.96px;
+        line-height: 6.25px;
+        }
+    }
+    
+    .profile-info { 
+        p {
+        font-size: 3px;
+        margin: 0;
+        line-height: 3.75px;
+        }
+    }
+    
+    .testimonial-quote {
+        font-size: 5px;
+        line-height: 6.82px;
+    }
+
     .heading--footer  {
         font-size: 18px;
         line-height: 13px;
@@ -1077,9 +1263,6 @@ button:hover, button:active {
     .footer-section li {
         font-size: 16px;
         line-height: 20px;
-    }
-    .card-1, .card-2 {
-        display: none;
     }
 
     .collab-images {
@@ -1108,7 +1291,7 @@ button:hover, button:active {
     }
     .footer {
         hr {
-        width: 390px;
+        width: 350px;
         }
     }
     .about-us__img {
@@ -1199,14 +1382,18 @@ button:hover, button:active {
     }
     .collab-images {
         .images-1 {
-            padding: 85px 0 0 91px;
+            width: 221px;
+            height: 196px;
+            bottom: 0%;
         }
         .images-2 {
-            padding: 0 0 230px;
+            width: 180px;
+            height: 177px;
+            left: 50%;
+            bottom: 60%;
         }
-        .images-1, .images-2 {
-            width: 40%;
-        }
+        width: 360px;
+        height: 250px;
     }
     .collab
     {
@@ -1227,9 +1414,79 @@ button:hover, button:active {
         .footer-sections {
             row-gap: 20px;
         }
+        .social-media img {
+            width:36px;
+            height: 36px;
+        }
+    }
+    .decor .group{
+        &-6{
+            left: 70%;
+        }
+        &-9 {
+            left: 65%;
+        }
+    }
+    .circl-1 img, .circl-2 img, .circl-3 img
+    {
+        width: 16px;
+        height: 16px;
     }
 }
 
+@media screen and (max-width: 380px) {
+    .container {
+        max-width: 310px;
+    }
+    .logo__header
+    {
+        width: 32px;
+        height: 29.99px;
+    }
+    .logo__txt__Agency
+    {
+        font-size: 14px;
+        line-height: 17.5px;
+    }
+    .logo__txt__Creativ
+    {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .about-us__img {
+        width: 300px;
+        height: 204px;
+    }
+    .button
+    {
+        padding: 5px 15px;
+    }
+    .collab-images .images-2 {
+        width: 160px;
+        height: 157px;
+    }
+    .collab-images .images-1 {
+        width: 201px;
+        height: 176px;
+    }
+    .collab-images {
+        width: 300px;
+        height: 200px;
+    }
+    .footer hr {
+        width: 300px;
+    }
+    .decor .group-6 {
+        left: 60%;
+    }
+    .picture--img img{
+        width: 300px;
+        height: 184px;
+    }
+    .footer .footer-bottom {
+        font-size: 15px;
+    }
+}
 
 
 
@@ -1258,7 +1515,6 @@ button:hover, button:active {
     z-index: 10; 
     display: block; 
     transition: 0.3s; 
-    overflow-y: auto; 
 } 
 .popup.open { 
     right: 0; 
@@ -1285,8 +1541,9 @@ button:hover, button:active {
     font-size: 20px; 
     font-weight: bold; 
     color: $color-background; 
-    transition: color 0.3s 
+    transition: $blue 0.3s 
 }
-.popup__menu li a:hover { 
-    color: #377DFF;
+.popup__menu li a:active { 
+    color: $blue;
+    background-color: $color-background;
 }
