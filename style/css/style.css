@@ -1131,7 +1131,7 @@ button:hover, button:active {
     line-height: 18px;
   }
   .decor .group-11 {
-    left: 50%;
+    left: 30%;
   }
   .servise {
     align-items: center;
@@ -1176,6 +1176,9 @@ button:hover, button:active {
   }
   .group-11 {
     left: 50%;
+  }
+  .group-11 {
+    left: 10%;
   }
   .about-us__txt {
     font-size: 14px;
@@ -1275,6 +1278,9 @@ button:hover, button:active {
   }
   .footer .footer-bottom {
     font-size: 15px;
+  }
+  .testimonial-card {
+    left: 75%;
   }
 }
 .error {
