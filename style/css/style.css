@@ -1292,6 +1292,11 @@ button:hover, button:active {
   align-items: center;
   flex-direction: column;
 }
+.error__txt a {
+  background-color: #377DFF;
+  box-shadow: 0px 4px 8px rgba(55, 125, 255, 0.5);
+  color: #FDFFFF;
+}
 .error__txt .error__mesage {
   line-height: 32px;
   font-weight: 400;
