@@ -17,7 +17,7 @@ body {
   max-width: 1240px;
   font-family: "Quicksand";
   font-size: 20px;
-  letter-spacing: -0.25px;
+  letter-spacing: 0.1px;
 }
 
 a, a:hover, a:visited, a:active {
@@ -79,7 +79,7 @@ ul {
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  letter-spacing: -0.25px;
+  letter-spacing: 0.1px;
 }
 
 .header ul {
@@ -146,7 +146,8 @@ button:hover, button:active {
 
 .heading--Home {
   margin: 0 0 24px 0;
-  letter-spacing: 1px;
+  letter-spacing: 0.6px;
+  padding: 0 70.5px;
 }
 
 .button--Home {
@@ -155,10 +156,11 @@ button:hover, button:active {
 
 .tekst {
   padding: 0 170px 0 180px;
+  letter-spacing: 0.2px;
 }
 .tekst p {
   margin: 0 0 32px;
-  line-height: 150%;
+  line-height: 30px;
   padding: 0 64px 0 59px;
   opacity: 0.6;
   color: gray;
@@ -394,7 +396,8 @@ button:hover, button:active {
   margin: 0 0 32px 0;
 }
 .item:hover, .item:active {
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
 }
 .item .heading-item {
   color: #1D1D1D;
