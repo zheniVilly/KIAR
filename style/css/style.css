@@ -757,6 +757,74 @@ button:hover, button:active {
   left: 1046px;
 }
 
+.error {
+  padding: 150px 0;
+}
+
+.error__txt {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.error__txt a {
+  background-color: #377DFF;
+  box-shadow: 0px 4px 8px rgba(55, 125, 255, 0.5);
+  color: #FDFFFF;
+}
+.error__txt .error__mesage {
+  line-height: 32px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.popup {
+  padding: 0 0 30px;
+  position: fixed;
+  right: -100%;
+  width: 100%;
+  background-color: #377DFF;
+  z-index: 10;
+  display: block;
+  transition: 0.3s;
+}
+
+.popup.open {
+  right: 0;
+  top: 110px;
+}
+
+.popup__menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: right;
+}
+
+.popup__menu li {
+  width: 100%;
+}
+
+.popup__menu li:active {
+  color: #377DFF;
+}
+
+.popup__menu li a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: #FDFFFF;
+  transition: #377DFF 0.3s;
+}
+
+.popup__menu li a:active {
+  color: #377DFF;
+  background-color: #FDFFFF;
+}
+
 @media screen and (max-width: 1395px) {
   .container {
     max-width: 1100px;
@@ -927,6 +995,9 @@ button:hover, button:active {
   .Home {
     padding-top: 160px;
   }
+  .heading--Home {
+    padding: 0 10px;
+  }
   .burger {
     display: block;
     z-index: 5;
@@ -1053,6 +1124,9 @@ button:hover, button:active {
   }
   .card-content {
     padding: 13.1px 9.64px 10.78px 10.12px;
+  }
+  .heading--Home {
+    padding: 0 39\0 px;
   }
   .profile {
     margin: 0 0 5.78px;
@@ -1238,6 +1312,21 @@ button:hover, button:active {
   .container {
     max-width: 310px;
   }
+  .Home {
+    padding: 100px 0 99px;
+  }
+  .about-us {
+    padding: 0 0 99px;
+  }
+  .our-services {
+    padding: 0 0 75px;
+  }
+  .Testimonial {
+    padding: 0px 0 51px;
+  }
+  .Collaboration {
+    padding: 100px 0 100px;
+  }
   .logo__header {
     width: 32px;
     height: 29.99px;
@@ -1282,74 +1371,19 @@ button:hover, button:active {
   .footer .footer-bottom {
     font-size: 15px;
   }
+  .footer-sections {
+    justify-content: center;
+  }
   .testimonial-card {
     left: 75%;
   }
-}
-.error {
-  padding: 150px 0;
-}
-
-.error__txt {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.error__txt a {
-  background-color: #377DFF;
-  box-shadow: 0px 4px 8px rgba(55, 125, 255, 0.5);
-  color: #FDFFFF;
-}
-.error__txt .error__mesage {
-  line-height: 32px;
-  font-weight: 400;
-  font-size: 20px;
-}
-
-.popup {
-  padding: 0 0 30px;
-  position: fixed;
-  right: -100%;
-  width: 100%;
-  background-color: #377DFF;
-  z-index: 10;
-  display: block;
-  transition: 0.3s;
-}
-
-.popup.open {
-  right: 0;
-  top: 110px;
-}
-
-.popup__menu {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: right;
-}
-
-.popup__menu li {
-  width: 100%;
-}
-
-.popup__menu li:active {
-  color: #377DFF;
-}
-
-.popup__menu li a {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 20px 0;
-  font-size: 20px;
-  font-weight: bold;
-  color: #FDFFFF;
-  transition: #377DFF 0.3s;
-}
-
-.popup__menu li a:active {
-  color: #377DFF;
-  background-color: #FDFFFF;
+  .heading--Home {
+    padding: 0 15px;
+  }
+  .infomation {
+    text-align: center;
+  }
+  .popup.open {
+    top: 80px;
+  }
 }/*# sourceMappingURL=style.css.map */
