@@ -1511,6 +1511,10 @@ button:hover, button:active {
         width: 16px;
         height: 16px;
     }
+    .infomation
+    {
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 380px) {
@@ -1595,11 +1599,11 @@ button:hover, button:active {
     .heading--Home {
     padding: 0 15px;
     }
-    .infomation
-    {
-        text-align: center;
-    }
+    
     .popup.open { 
         top: 80px 
     } 
 }
+
+
+
