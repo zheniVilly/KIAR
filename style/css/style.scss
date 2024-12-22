@@ -6,7 +6,7 @@ $color-text: #1D1D1D;
 $gray: #464646;
 $container-width: 1240px;
 $base-font-size: 20px;
-$base-letter-spacing: -0.25px;
+$base-letter-spacing: 0.1px;
 $base-line-height: 24px;
 $opacity: 0.5;
 
@@ -175,7 +175,8 @@ button:hover, button:active {
 
 .heading--Home {
     margin: 0 0 24px 0;
-    letter-spacing: 1px;
+    letter-spacing: 0.6px;
+    padding: 0 70.5px;
 }
 
 .button--Home {
@@ -184,9 +185,10 @@ button:hover, button:active {
 
 .tekst {
     padding: 0 170px 0 180px;
+    letter-spacing: 0.2px;
     p {
     margin: 0 0 32px;
-    line-height: 150%;
+    line-height: 30px;
     padding: 0 64px 0 59px;
     opacity: 0.6;
     color: gray;
@@ -437,7 +439,8 @@ button:hover, button:active {
     }
     &:hover, 
     &:active {
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
     }
     .heading-item {
     color: $color-text;
