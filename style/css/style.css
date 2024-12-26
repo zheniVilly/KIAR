@@ -939,6 +939,10 @@ button:hover, button:active {
   .group-11 {
     left: 60%;
   }
+  .servise__content .servise__description {
+    width: auto;
+    height: auto;
+  }
 }
 @media screen and (max-width: 1170px) {
   .container {
