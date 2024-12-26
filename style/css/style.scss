@@ -1041,6 +1041,10 @@ button:hover, button:active {
             left: 60%; 
         } 
     }
+    .servise__content .servise__description {
+        width: auto;
+        height: auto;
+    }
 }
 
 @media screen and (max-width: 1170px) {
@@ -1092,6 +1096,7 @@ button:hover, button:active {
     {
         align-items: center;
     }
+    
 
 }
 
