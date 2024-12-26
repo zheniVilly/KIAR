@@ -196,6 +196,11 @@ button:hover, button:active {
     }
 }
 
+.picture--img img
+{
+    border-radius: 50px;
+}
+
 .picture
 {
     position: relative;
@@ -351,6 +356,9 @@ button:hover, button:active {
 .about-us__img{
     width: 565px;
     height: 402px;
+    img {
+        border-radius: 24px;
+    }
 }
 
 .about-us__txt {
@@ -399,7 +407,7 @@ button:hover, button:active {
         line-height: 71.5px;
     }
 
-    .heading--read-more {
+    .read-more {
         color: $blue;
         display: flex;
         justify-content: flex-end;
@@ -465,7 +473,7 @@ button:hover, button:active {
 
 .Portfolio {
     text-align: center;
-    padding: 0 0 141px;
+    padding: 0 0 155px;
 }
 
 .container--Portfolio {
@@ -484,7 +492,7 @@ button:hover, button:active {
 }
 
 .medias {
-    margin: 0 0 34px;
+    margin: 0 0 40px;
     flex-direction: row;
     gap: 69px;
 }
@@ -527,6 +535,16 @@ button:hover, button:active {
     img {
         width: 100%;
         display: block;
+        border-radius: 30px;
+    }
+}
+.button--portfolio
+{
+    display: inline;
+    padding-bottom: 13px;
+    a {
+        text-decoration: none;
+        color: #377DFF;
     }
 }
 
@@ -561,6 +579,7 @@ button:hover, button:active {
     img {
         width: 70px;
         height: 70px;
+        border-radius: 20px;
     }
 }
 
@@ -636,7 +655,9 @@ button:hover, button:active {
     position: relative;
     width: 587px;
     height: 379px;
-
+    img{
+        border-radius: 16px;
+    }
     .images-1 {
         position: absolute;
         padding: 91px 0 0;
@@ -742,6 +763,9 @@ button:hover, button:active {
     .footer__location {
         font-size: 18px;
         line-height: 23px;
+        a {
+            color: #ffffff;
+        }
     }
 
     .social-media {
@@ -1095,6 +1119,9 @@ button:hover, button:active {
     .testimonial-card {
         left: 79%;
     }
+    .button-container {
+        justify-content: space-around;
+    }
     
 }
 
@@ -1117,6 +1144,10 @@ button:hover, button:active {
     {
         padding: 0 10px;
     }
+    .button--Home
+    {
+        margin: 30px;
+    }
     .burger {
         display: block;
         z-index: 5;
@@ -1131,9 +1162,7 @@ button:hover, button:active {
     .button {
         padding: 12px 35px;
     }
-    .button-container {
-        justify-content: space-around;
-    }
+    
     .footer {
         .social-media {
         padding: 0 50px;
@@ -1234,8 +1263,32 @@ button:hover, button:active {
     .container {
         max-width: 320px;
     }
-    .container--Portfolio, .container--Testimonial {
+    .container--Portfolio {
         padding: 0 25px;
+    }
+    .Home
+    {
+        padding: 100px 0 59px;
+    }
+    .about-us
+    {
+        padding: 0 0 13px;
+    }
+    .servise__content
+    {
+        padding: 33px 0 33px;
+    }
+    .our-services
+    {
+        padding: 0 0 75px;
+    }
+    .Testimonial
+    {
+        padding: 0px 0 51px;
+    }
+    .Collaboration
+    {
+        padding: 70px 0 50px;
     }
     .picture img {
         width: 330px;
@@ -1416,7 +1469,7 @@ button:hover, button:active {
                 width: auto;
                 height: auto;
             }
-            .heading--read-more {
+            .read-more {
                 font-size: 14px;
                 line-height: 17.5px;
                 margin: 0 0 27px;
@@ -1514,26 +1567,7 @@ button:hover, button:active {
     .container {
         max-width: 310px;
     }
-    .Home
-    {
-        padding: 100px 0 99px;
-    }
-    .about-us
-    {
-        padding: 0 0 99px;
-    }
-    .our-services
-    {
-        padding: 0 0 75px;
-    }
-    .Testimonial
-    {
-        padding: 0px 0 51px;
-    }
-    .Collaboration
-    {
-        padding: 100px 0 100px;
-    }
+    
     
     .logo__header
     {
@@ -1553,6 +1587,9 @@ button:hover, button:active {
     .about-us__img {
         width: 300px;
         height: 204px;
+        img {
+            border-radius: 12px;
+        }
     }
     .button
     {
@@ -1600,6 +1637,3 @@ button:hover, button:active {
         top: 80px 
     } 
 }
-
-
-
