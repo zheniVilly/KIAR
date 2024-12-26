@@ -167,6 +167,10 @@ button:hover, button:active {
   font-family: "Nunito";
 }
 
+.picture--img img {
+  border-radius: 50px;
+}
+
 .picture {
   position: relative;
 }
@@ -313,6 +317,9 @@ button:hover, button:active {
   width: 565px;
   height: 402px;
 }
+.about-us__img img {
+  border-radius: 24px;
+}
 
 .about-us__txt {
   padding: 25px 0;
@@ -358,7 +365,7 @@ button:hover, button:active {
   margin: 0 0 18px;
   line-height: 71.5px;
 }
-.servise__content .heading--read-more {
+.servise__content .read-more {
   color: #377DFF;
   display: flex;
   justify-content: flex-end;
@@ -368,7 +375,7 @@ button:hover, button:active {
   font-weight: 700;
   line-height: 34px;
 }
-.servise__content .heading--read-more img {
+.servise__content .read-more img {
   padding: 0 0 0 16px;
 }
 .servise__content .servise__description {
@@ -423,7 +430,7 @@ button:hover, button:active {
 
 .Portfolio {
   text-align: center;
-  padding: 0 0 141px;
+  padding: 0 0 155px;
 }
 
 .container--Portfolio {
@@ -442,7 +449,7 @@ button:hover, button:active {
 }
 
 .medias {
-  margin: 0 0 34px;
+  margin: 0 0 40px;
   flex-direction: row;
   gap: 69px;
 }
@@ -475,6 +482,16 @@ button:hover, button:active {
 .media img {
   width: 100%;
   display: block;
+  border-radius: 30px;
+}
+
+.button--portfolio {
+  display: inline;
+  padding-bottom: 13px;
+}
+.button--portfolio a {
+  text-decoration: none;
+  color: #377DFF;
 }
 
 .Testimonial {
@@ -506,6 +523,7 @@ button:hover, button:active {
 .avatar-pic img {
   width: 70px;
   height: 70px;
+  border-radius: 20px;
 }
 
 .prof {
@@ -576,6 +594,9 @@ button:hover, button:active {
   position: relative;
   width: 587px;
   height: 379px;
+}
+.collab-images img {
+  border-radius: 16px;
 }
 .collab-images .images-1 {
   position: absolute;
@@ -666,6 +687,9 @@ button:hover, button:active {
 .footer .footer__location {
   font-size: 18px;
   line-height: 23px;
+}
+.footer .footer__location a {
+  color: #ffffff;
 }
 .footer .social-media {
   margin: 0 0 11.66px 0;
@@ -983,6 +1007,9 @@ button:hover, button:active {
   .testimonial-card {
     left: 79%;
   }
+  .button-container {
+    justify-content: space-around;
+  }
 }
 @media screen and (max-width: 800px) {
   .container {
@@ -1000,6 +1027,9 @@ button:hover, button:active {
   .heading--Home {
     padding: 0 10px;
   }
+  .button--Home {
+    margin: 30px;
+  }
   .burger {
     display: block;
     z-index: 5;
@@ -1012,9 +1042,6 @@ button:hover, button:active {
   }
   .button {
     padding: 12px 35px;
-  }
-  .button-container {
-    justify-content: space-around;
   }
   .footer .social-media {
     padding: 0 50px;
@@ -1085,8 +1112,26 @@ button:hover, button:active {
   .container {
     max-width: 320px;
   }
-  .container--Portfolio, .container--Testimonial {
+  .container--Portfolio {
     padding: 0 25px;
+  }
+  .Home {
+    padding: 100px 0 59px;
+  }
+  .about-us {
+    padding: 0 0 13px;
+  }
+  .servise__content {
+    padding: 33px 0 33px;
+  }
+  .our-services {
+    padding: 0 0 75px;
+  }
+  .Testimonial {
+    padding: 0px 0 51px;
+  }
+  .Collaboration {
+    padding: 70px 0 50px;
   }
   .picture img {
     width: 330px;
@@ -1228,7 +1273,7 @@ button:hover, button:active {
     width: auto;
     height: auto;
   }
-  .servise .servise__content .heading--read-more {
+  .servise .servise__content .read-more {
     font-size: 14px;
     line-height: 17.5px;
     margin: 0 0 27px;
@@ -1311,21 +1356,6 @@ button:hover, button:active {
   .container {
     max-width: 310px;
   }
-  .Home {
-    padding: 100px 0 99px;
-  }
-  .about-us {
-    padding: 0 0 99px;
-  }
-  .our-services {
-    padding: 0 0 75px;
-  }
-  .Testimonial {
-    padding: 0px 0 51px;
-  }
-  .Collaboration {
-    padding: 100px 0 100px;
-  }
   .logo__header {
     width: 32px;
     height: 29.99px;
@@ -1341,6 +1371,9 @@ button:hover, button:active {
   .about-us__img {
     width: 300px;
     height: 204px;
+  }
+  .about-us__img img {
+    border-radius: 12px;
   }
   .button {
     padding: 5px 15px;
